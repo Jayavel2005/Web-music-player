@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+
+    background-image: linear-gradient(25deg, rgb(131, 223, 2),rgb(114, 0, 59));
+    display: flex;
+}
+.container{
+    width: 100%;
+    margin: 20px 20px;
+    border-radius: 30px ;
+
+
+}
+.musicsection{
+    display: flex;
+
+    
+}
+.sidebar{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px ;
+    position: fixed;
+    padding: 10px;
+    
+}
+.control{
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 2px 5px 10px rgb(0, 0, 0);  
+    border-radius: 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+    margin-bottom: 30px;
+}
+.control img{
+    width: 40px;
+    margin: 10px 0;
+}
+.artist{
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 2px 5px 10px rgb(0, 0, 0); 
+    border-radius: 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist img{
+    width: 40px;
+    height: 40px;
+    object-fit:cover;
+    object-position: top;
+    margin: 11px;
+    border-radius: 50%;
+
+}
+.music{
+    margin-left: 6%;
+    flex: 1;
+    z-index: 2;
+    border-radius: 30px;
+}
+.songs{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+
+}
+.song{
+    width: 250px;
+    height: 310px;
+    border-radius: 20px;
+    
+    
+}
+.song img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position:end;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+   
+
+}
+
+audio{
+    width: 100%;
+    border-radius: none;
+    height: 50px;
+    position: relative;
+    top: -3.5px;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: rgb(101, 0, 148);
+    }
+
+  audio::-webkit-media-controls-enclosure {
+    border-radius: 0 0 20px 20px;
+}
+
